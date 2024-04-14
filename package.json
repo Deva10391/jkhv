@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.3.4"
+  },
+  "proxy": "http://localhost:3000",
+  "clientinstall": "npm install --prefix client",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "s": "node app.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "name": "project-4",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
